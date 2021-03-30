@@ -9,8 +9,6 @@ import Input from "../Input/Input";
 
 import "./Chat.css";
 
-const ENDPOINT = "https://farmer-portal-chat.herokuapp.com/";
-
 let socket;
 
 const Chat = ({ location }) => {
@@ -19,7 +17,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-
+  const ENDPOINT = "https://farmer-portal-chat.herokuapp.com/";
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
 
