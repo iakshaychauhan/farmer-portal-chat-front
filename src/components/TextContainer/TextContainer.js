@@ -6,15 +6,6 @@ import "./TextContainer.css";
 
 const TextContainer = ({ users }) => (
   <div className="textContainer">
-    <div>
-      <h1>
-        {" "}
-        Chat Application{" "}
-        <span role="img" aria-label="emoji">
-          💬
-        </span>
-      </h1>
-    </div>
     {users ? (
       <div>
         <h1>People currently chatting:</h1>
